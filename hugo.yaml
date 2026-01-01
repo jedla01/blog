@@ -1,4 +1,55 @@
 baseURL: https://example.org/
 languageCode: en-us
-title: My New Hugo Site
+title: DevOps Journey
 theme: ["PaperMod"]
+
+params:
+  env: production
+  title: DevOps Journey
+  description: "Sharing insights from my GitOps, DevOps, and Infrastructure as Code journey"
+  keywords: [DevOps, GitOps, Infrastructure as Code, Kubernetes, CI/CD]
+  author: Pavel Jedlicka
+  
+  defaultTheme: auto
+  disableThemeToggle: false
+  
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  
+  homeInfoParams:
+    Title: "Welcome to DevOps Journey 👋"
+    Content: >
+      A collection of learnings, tips, and discoveries from my journey through GitOps, DevOps, 
+      and Infrastructure as Code. Sharing practical insights and solutions to common challenges.
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/jedla01"
+    - name: linkedin
+      url: "https://linkedin.com/in/paveljedlicka"
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 30
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
